@@ -11,9 +11,25 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val person = Person("Maksim", "Veynberg")
+        val personCopy = person.copy()
+
+        val personArray = arrayListOf<Person>(
+                person,
+                personCopy,
+                Person("Ivan", "Svjatoslavovich")
+        )
+
+        for (p in personArray) {
+            println(p)
+        }
+
+        for (i in personArray.indices) {
+            println(personArray[i])
+        }
+
 
         findViewById<Button>(R.id.button).setOnClickListener {
-            Toast.makeText(this, "My name is ${person.firstName} ${person.lastName}", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "My name is ${personCopy.firstName} ${person.lastName}", Toast.LENGTH_LONG).show()
         }
     }
 }

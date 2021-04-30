@@ -1,3 +1,7 @@
 package ru.cj264.geekbrains.movie_finder
 
-data class Person(val firstName: String, val lastName: String)
+data class Person(val firstName: String, val lastName: String) {
+    override fun toString(): String {
+        return "$firstName $lastName"
+    }
+}
