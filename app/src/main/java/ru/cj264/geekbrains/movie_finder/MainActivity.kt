@@ -10,8 +10,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val person = Person("Maksim", "Veynberg")
+
         findViewById<Button>(R.id.button).setOnClickListener {
-            Toast.makeText(this, "Button pressed", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "My name is ${person.firstName} ${person.lastName}", Toast.LENGTH_LONG).show()
         }
     }
 }
