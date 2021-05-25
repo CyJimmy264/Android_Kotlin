@@ -1,0 +1,16 @@
+* Homework2
+** Tasks
+   - [ ] ViewBinding
+   - [ ] Макет
+     - [ ] Тулбар
+       - [ ] Заголовок
+       - [ ] Поиск
+       - [ ] Доп. меню
+     - [ ] Вертикальный RecyclerView
+     - [ ] Заголовок
+     - [ ] Горизонтальный RecyclerView
+     - [ ] Movie CardView
+     - [ ] Bottom navigation view
+** 25/05/2021
+*** 20:45:49
+    Для начала сделать ViewBinding, прямо как в методичке.
